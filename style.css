@@ -16,6 +16,8 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
 }
 
 body {
@@ -102,16 +104,18 @@ main {
     color: var(--strawberry);
 }
 
+.blue {
+    color: var(--ocean);
+}
+
 h1 {
     font-size: 3.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
-h2 {
+.sub-title {
     font-size: 1.3rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
 }
 
 hr {
@@ -139,6 +143,66 @@ button {
     cursor: pointer;
 }
 
+.recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    max-width: 1120px;
+}
+
+.recipes-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.recipes-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    max-width: 1120px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    max-width: 400px;
+    background-color: var(--sand);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.author-info > img {
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+
 footer {
     display: flex;
     flex-direction: column;
@@ -150,6 +214,6 @@ footer {
 }
 
 footer > p {
-    font-weight: 500;
+    font-size: 0.8rem;
     color: #fff;
 }
