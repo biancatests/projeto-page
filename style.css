@@ -134,9 +134,17 @@ hr {
     border-radius: 0.5rem;
 }
 
+.btn-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    padding-left: 6rem;
+    transform: translate(0, -50%);
+}
+
 button {
-    width: 3rem;
     height: 3rem;
+    width: 3rem;
     background-color: var(--chocolate);
     border: none;
     border-radius: 0.5rem;
@@ -150,6 +158,7 @@ button {
     gap: 1rem;
 
     max-width: 1120px;
+    padding: 3rem 2rem;
 }
 
 .recipes-header {
@@ -194,6 +203,7 @@ button {
 .author-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 0.5rem;
 }
 
